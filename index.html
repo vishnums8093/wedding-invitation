@@ -1,0 +1,53 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123b2b">
+<title>Sreelekshmi Ravi & Vishnu M S</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div>✦</div><small>Preparing your invitation…</small></div>
+
+<!-- The cover itself is the only TAP TO OPEN control. The words are already part of the artwork. -->
+<section id="cover" aria-label="Open wedding invitation" role="button" tabindex="0">
+  <div class="cover-card"><img src="assets/cover.png" alt="Wedding invitation cover"></div>
+</section>
+
+<main id="invitation" aria-hidden="true">
+  <section class="art-section">
+    <img src="assets/invitation_art.png" class="invitation-art" alt="Wedding invitation message, scratch section and wedding details">
+
+    <div class="scratch-zone" id="scratchArea" aria-label="Scratch to reveal">
+      <div class="scratch-reveal" id="scratchReveal">
+        <span>OUR SPECIAL DAY</span>
+        <strong>6 November 2026</strong>
+        <b>11:30 AM · IST</b>
+      </div>
+      <canvas id="scratchCanvas"></canvas>
+    </div>
+  </section>
+
+  <section class="couple-section">
+    <div class="couple-frame">
+      <img src="assets/couple.png" class="couple-image" alt="Illustrated Kerala couple">
+    </div>
+    <p class="eyebrow">A NEW CHAPTER</p>
+    <h2>Two hearts.<br>One beautiful beginning.</h2>
+    <p class="couple-copy">Thank you for being part of our happiness. Your blessings and warm wishes mean the world to us.</p>
+  </section>
+
+  <section class="final-section">
+    <div class="ornament">❦</div>
+    <p class="eyebrow">WITH LOVE</p>
+    <h2>Sreelekshmi Ravi<br>&amp;<br>Vishnu M S</h2>
+    <p>6 · 11 · 2026</p>
+    <div class="end-note">With love, always.</div>
+  </section>
+</main>
+
+<div id="tapFx" aria-hidden="true"></div>
+<script src="script.js"></script>
+</body>
+</html>
