@@ -4,42 +4,75 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <meta name="theme-color" content="#123b2b">
-<title>Sreelekshmi & Vishnu</title>
+<title>Sreelekshmi Ravi & Vishnu M S</title>
 <link rel="stylesheet" href="style.css">
 </head>
 <body>
-<div id="loader"><span>✦</span></div>
+<div id="loader"><div>✦</div><small>Preparing your invitation…</small></div>
 
-<!-- The cover is a real overlay, so there is no blank second page. -->
-<section id="cover" aria-label="Open wedding announcement">
+<section id="cover" aria-label="Wedding invitation cover">
   <div class="cover-card">
-    <img src="assets/cover.png" alt="" class="cover-image">
-    <button id="open" class="open-button" aria-label="Open invitation">TAP TO OPEN</button>
+    <img src="assets/cover.png" alt="Sreelekshmi Ravi and Vishnu M S wedding invitation" class="cover-image">
+    <div class="cover-shine"></div>
+    <button id="openBtn" type="button">TAP TO OPEN <span>♥</span></button>
   </div>
 </section>
 
 <main id="invitation">
-  <div class="art-wrap">
-    <img src="assets/invitation_art.png" alt="Kerala-inspired wedding announcement for Sreelekshmi Ravi and Vishnu M S" class="art">
+  <section class="hero-section">
+    <div class="hero-art-wrap">
+      <img src="assets/invitation_art.png" class="hero-art" alt="Kerala-inspired wedding announcement">
+    </div>
+    <button class="scroll-next" data-scroll="details" aria-label="Continue">⌄</button>
+  </section>
 
-    <!-- A duplicate of the illustrated couple from the artwork, animated very subtly. -->
-    <img src="assets/couple_overlay.png" alt="" class="couple-motion" aria-hidden="true">
+  <section id="details" class="content-section parchment">
+    <div class="ornament">✦</div>
+    <p class="eyebrow">OUR SPECIAL DAY</p>
+    <h1>Sreelekshmi Ravi <span>&amp;</span> Vishnu M S</h1>
+    <p class="intro">With the blessings of our families, we are beginning our journey together.</p>
 
-    <!-- This masks the printed date until the scratch interaction is completed. -->
-    <div id="dateMask" class="date-mask" aria-hidden="true"></div>
-
-    <!-- Real scratch interaction positioned over the gold scratch panel. -->
-    <div id="scratchArea" class="scratch-area" aria-label="Scratch to reveal the wedding date and time">
-      <canvas id="scratchCanvas"></canvas>
-      <div id="scratchHint"><span>☝</span><b>SCRATCH HERE</b><small>Reveal our special day</small></div>
+    <div class="scratch-card">
+      <div class="scratch-title">A LITTLE SURPRISE</div>
+      <p class="scratch-subtitle">Use your finger to scratch the gold</p>
+      <div id="scratchArea" class="scratch-area">
+        <div class="reveal-content">
+          <div class="reveal-label">OUR WEDDING</div>
+          <strong>6 NOVEMBER 2026</strong>
+          <span>11:30 AM IST</span>
+        </div>
+        <canvas id="scratchCanvas"></canvas>
+        <div id="scratchHint"><span>☝</span><b>SCRATCH HERE</b><small>Reveal our special day</small></div>
+      </div>
     </div>
 
-    <div class="scroll-cue">SCROLL TO FEEL OUR STORY <span>⌄</span></div>
-  </div>
+    <div class="detail-grid">
+      <div class="detail-item"><span>DATE</span><b>Friday<br>6 November 2026</b></div>
+      <div class="detail-item"><span>TIME</span><b>11:30 AM<br>IST</b></div>
+      <div class="detail-item full"><span>VENUE</span><b>Sub Registrar Office, Kothamangalam</b></div>
+    </div>
+  </section>
+
+  <section class="content-section green-section">
+    <div class="illustration-frame">
+      <img src="assets/couple_overlay.png" alt="Illustrated couple in Kerala wedding attire" class="couple-image">
+    </div>
+    <p class="eyebrow">A NEW CHAPTER</p>
+    <h2>Two hearts.<br>One beautiful beginning.</h2>
+    <p>Thank you for being part of our happiness. Your blessings and warm wishes mean the world to us.</p>
+    <div class="leaf-divider">❧ ✦ ❧</div>
+  </section>
+
+  <section class="content-section final-section">
+    <div class="ornament">❦</div>
+    <p class="eyebrow">SAVE THE DATE</p>
+    <h2>6 · 11 · 2026</h2>
+    <p>Sreelekshmi Ravi &amp; Vishnu M S</p>
+    <div class="end-note">With love, always.</div>
+  </section>
 </main>
 
 <div id="tapFx" aria-hidden="true"></div>
-<div id="petals" aria-hidden="true"></div>
 <script src="script.js"></script>
 </body>
 </html>
