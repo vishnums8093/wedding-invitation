@@ -1,0 +1,137 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, viewport-fit=cover">
+  <meta name="theme-color" content="#173b2a">
+  <meta name="apple-mobile-web-app-capable" content="yes">
+  <title>Sreelekshmi & Vishnu | A Beautiful Chapter Begins</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=DM+Sans:wght@400;500;600&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+  <!-- Opening card -->
+  <section id="cover" class="cover-screen" aria-label="Wedding invitation cover">
+    <div class="cover-card" id="coverCard">
+      <div class="leaf leaf-a"></div>
+      <div class="leaf leaf-b"></div>
+      <div class="jasmine jasmine-1">✿</div>
+      <div class="jasmine jasmine-2">✿</div>
+      <div class="jasmine jasmine-3">✿</div>
+
+      <div class="cover-inner">
+        <div class="cover-kicker">A BEAUTIFUL<br>CHAPTER<br>BEGINS</div>
+        <div class="tiny-divider">❧</div>
+
+        <h1>
+          <span>Vishnu M S</span>
+          <em>&amp;</em>
+          <span>Sreelekshmi Ravi</span>
+        </h1>
+
+        <p class="cover-subtitle">SAME PEOPLE<br>A BRIGHTER TOMORROW</p>
+
+        <div class="boat">
+          <span>⌁</span>
+          <span>⌁</span>
+          <span>⌁</span>
+          <b>▰</b>
+        </div>
+
+        <button id="openButton" class="open-button" type="button">
+          TAP TO OPEN
+          <span>♥</span>
+        </button>
+      </div>
+
+      <div class="seal">✦</div>
+    </div>
+  </section>
+
+  <!-- Main invitation: one continuous mobile page -->
+  <main id="invitation" class="invitation" aria-hidden="true">
+
+    <section class="paper hero-message reveal">
+      <div class="lamp">♨</div>
+      <p class="eyebrow">DEAR FAMILY &amp; FRIENDS</p>
+      <div class="ornament">— ❧ —</div>
+
+      <h2>With happy hearts,<br>we are delighted<br>to share a little piece<br>of our story with you.</h2>
+
+      <p class="big-line">We are getting married.</p>
+
+      <p>
+        We have chosen a simple and meaningful beginning
+        to our life together, surrounded by the people
+        closest to us.
+      </p>
+
+      <p>Your love, blessings and good wishes<br>mean the world to us.</p>
+
+      <div class="signature">
+        <small>With love,</small>
+        <strong>Vishnu &amp; Sreelekshmi</strong>
+      </div>
+
+      <div class="backwater-line"></div>
+    </section>
+
+    <section class="scratch-section reveal">
+      <div class="section-heading">
+        <span>A LITTLE SOMETHING TO DISCOVER</span>
+        <div>— ❧ —</div>
+        <p>Scratch here to reveal our special day</p>
+      </div>
+
+      <div class="scratch-wrap" id="scratchWrap">
+        <div class="reveal-card" id="revealCard">
+          <div class="date-label">OUR SPECIAL DAY</div>
+          <div class="date-main">06 NOVEMBER 2026</div>
+          <div class="date-time">11:30 AM <small>(IST)</small></div>
+          <div class="date-location">
+            <strong>Sub Registrar Office</strong>
+            <span>Kothamangalam</span>
+          </div>
+        </div>
+
+        <canvas id="scratchCanvas" aria-label="Scratch here to reveal the date and time"></canvas>
+
+        <div class="scratch-hint">
+          <div class="finger">☝</div>
+          <strong>SCRATCH HERE</strong>
+          <span>Use your finger</span>
+        </div>
+      </div>
+
+      <p class="scratch-note" id="scratchNote">Keep scratching to reveal the details ✦</p>
+    </section>
+
+    <section class="couple-section reveal">
+      <div class="quote">“Different path.<br>Same forever.”</div>
+
+      <div class="illustration-frame">
+        <img src="assets/couple_illustration.png"
+             alt="Illustration of Sreelekshmi and Vishnu in traditional Kerala attire"
+             class="couple-image">
+        <div class="petal petal-a">✿</div>
+        <div class="petal petal-b">✿</div>
+        <div class="petal petal-c">✿</div>
+      </div>
+
+      <div class="closing">
+        <div class="ornament">— ❧ —</div>
+        <h2>Two hearts.<br>One beautiful journey.</h2>
+        <p>Thank you for being a part of our story.</p>
+        <div class="names">Sreelekshmi <span>♥</span> Vishnu</div>
+      </div>
+    </section>
+
+  </main>
+
+  <div id="tapLayer" class="tap-layer" aria-hidden="true"></div>
+  <script src="script.js"></script>
+</body>
+</html>
