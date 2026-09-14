@@ -1,0 +1,57 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#123b2b">
+<title>Sreelekshmi Ravi & Vishnu M S</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<div id="loader"><div>✦</div><small>Preparing your invitation…</small></div>
+
+<!-- The cover is the only opening control. -->
+<section id="cover" aria-label="Open wedding invitation" role="button" tabindex="0">
+  <div class="cover-card"><img src="assets/cover.png" alt="Wedding invitation cover"></div>
+</section>
+
+<main id="invitation" aria-hidden="true">
+  <section class="message-section">
+    <img src="assets/invitation_top.png" class="message-art" alt="Wedding announcement">
+  </section>
+
+  <section class="scratch-section" aria-label="Scratch to reveal wedding date and time">
+    <div class="scratch-title">A LITTLE SOMETHING TO DISCOVER</div>
+    <div class="scratch-card" id="scratchArea">
+      <img src="assets/scratch_panel.png" class="scratch-panel" alt="Scratch here">
+      <div class="scratch-reveal" id="scratchReveal">
+        <div class="reveal-kicker">OUR SPECIAL DAY</div>
+        <div class="reveal-date">6 November 2026</div>
+        <div class="reveal-row"><span>◷</span><b>11:30 AM (IST)</b></div>
+        <div class="reveal-row"><span>⌖</span><b>Sub Registrar Office<br>Kothamangalam</b></div>
+      </div>
+      <canvas id="scratchCanvas" aria-label="Scratch with your finger"></canvas>
+    </div>
+  </section>
+
+  <section class="couple-section">
+    <div class="couple-frame">
+      <img src="assets/couple.png" class="couple-image" alt="Illustrated Kerala couple sitting together">
+    </div>
+    <p class="eyebrow">A NEW CHAPTER</p>
+    <h2>Two hearts.<br>One beautiful beginning.</h2>
+    <p class="couple-copy">Thank you for being part of our happiness. Your blessings and warm wishes mean the world to us.</p>
+  </section>
+
+  <section class="final-section">
+    <div class="ornament">❦</div>
+    <p class="eyebrow">WITH LOVE</p>
+    <h2>Sreelekshmi Ravi<br><span>&amp;</span><br>Vishnu M S</h2>
+    <div class="end-note">With love, always.</div>
+  </section>
+</main>
+
+<div id="tapFx" aria-hidden="true"></div>
+<script src="script.js"></script>
+</body>
+</html>
